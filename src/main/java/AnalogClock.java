@@ -13,11 +13,15 @@ class AnalogClock {
          *  your code goes here
          */
 
-         int partialHour, remaindingDegree, remainder, minutes = 0;
+         int partialHour, remaindingDegree, remainder, minutes, minHandDegree = 0;
 
           partialHour = hourHandDegree % 30;
           remaindingDegree = partialHour /6;
           remainder = partialHour % 6;
+          minutes = (remaindingDegree * 12) + (remainder * 2);
+          minHandDegree = minutes * 6;
+
+          System.out.print(minHandDegree);
 
 
         // closing the scanner object
