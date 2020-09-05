@@ -15,7 +15,10 @@ class AnalogClock {
 
          int partialHour, remaindingDegree, remainder, minutes = 0;
 
-         
+          partialHour = hourHandDegree % 30;
+          remaindingDegree = partialHour /6;
+          remainder = partialHour % 6;
+
 
         // closing the scanner object
         scanner.close();
