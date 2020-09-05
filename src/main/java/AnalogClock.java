@@ -16,7 +16,7 @@ class AnalogClock {
          int partialHour, remaindingDegree, remainder, minutes, minHandDegree = 0;
 
           partialHour = hourHandDegree % 30;
-          remaindingDegree = partialHour /6;
+          remaindingDegree = partialHour / 6;
           remainder = partialHour % 6;
           minutes = (remaindingDegree * 12) + (remainder * 2);
           minHandDegree = minutes * 6;
