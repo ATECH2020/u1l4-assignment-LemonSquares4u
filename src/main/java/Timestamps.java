@@ -34,7 +34,7 @@ class Timestamps {
         conM = deltaM * 60;
  
         totalS = conH + conM + deltaS;
-        System.out.print("Difference in terms of Seconds: " + totalS);
+        System.out.print(/*"Difference in terms of Seconds: " + */totalS);
 
 
 
