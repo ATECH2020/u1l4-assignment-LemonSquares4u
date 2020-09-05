@@ -25,6 +25,6 @@ class AnalogClock {
 
 
         // closing the scanner object
-        scanner.close();
+        scanboi.close();
     }
 }
