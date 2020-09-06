@@ -15,18 +15,20 @@ class StudentDesks {
         /*
          *  your code goes here
          */
-         double classOneDesksNeed,classTwoDesksNeed, classThreeDesksNeed, desksNeeded = 0;
-         int roundedDesks = 0;
+         double classOneDesksNeed,classTwoDesksNeed, classThreeDesksNeed= 0;
+
+         int roundedDesksOne,roundedDesksTwo,roundedDesksThree = 0;
 
          /*int classOneExtras,classTwoExtras,classThreeExtras,extraTotal = 0;*/
 
-         /*classOneDesksNeed = classOneKids / 2.0;
+         classOneDesksNeed = classOneKids / 2.0;
          classTwoDesksNeed = classTwoKids / 2.0;  
          classThreeDesksNeed = classThreeKids / 2.0;  
 
-         desksNeeded = classOneDesksNeed + classTwoDesksNeed + classThreeDesksNeed;*/
+         /*desksNeeded = classOneDesksNeed + classTwoDesksNeed + classThreeDesksNeed;*/
 
-        desksNeeded = (classOneKids/2.0) + (classTwoKids/2.0) + (classThreeKids/2.0); 
+         /*desksNeeded = (classOneKids/2.0) + (classTwoKids/2.0) + (classThreeKids/2.0);*/ 
+
 
          /*classOneExtras = classOneKids % 2;
          classTwoExtras = classOneKids % 2;
@@ -34,8 +36,12 @@ class StudentDesks {
 
          extraTotal = classOneExtras + classTwoExtras + classThreeExtras;*/ 
 
-         roundedDesks = (int) Math.round(desksNeeded); 
-        if(roundedDesks < 3)
+         roundedDesksOne = (int) Math.round(classOneDesksNeed); 
+         roundedDesksTwo = (int) Math.round(classTwoDesksNeed); 
+         roundedDesksThree = (int) Math.round(classThreeDesksNeed); 
+
+
+         if(roundedDesks < 3)
          {
            roundedDesks = 3; 
          }
