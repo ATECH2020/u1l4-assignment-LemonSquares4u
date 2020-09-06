@@ -17,7 +17,7 @@ class StudentDesks {
          */
          double classOneDesksNeed,classTwoDesksNeed, classThreeDesksNeed= 0;
 
-         int roundedDesksOne,roundedDesksTwo,roundedDesksThree = 0;
+         int roundedDesksOne,roundedDesksTwo,roundedDesksThree,totalDesks = 0;
 
          /*int classOneExtras,classTwoExtras,classThreeExtras,extraTotal = 0;*/
 
@@ -40,12 +40,13 @@ class StudentDesks {
          roundedDesksTwo = (int) Math.round(classTwoDesksNeed); 
          roundedDesksThree = (int) Math.round(classThreeDesksNeed); 
 
+         totalDesks = roundedDesksOne  +roundedDesksTwo + roundedDesksThree;
 
-         if(roundedDesks < 3)
+         if(totalDesks < 3)
          {
-           roundedDesks = 3; 
+           totalDesks = 3; 
          }
-          System.out.print(/*"desks needed " + */roundedDesks);
+          System.out.print(/*"desks needed " + */totalDesks);
 
           /*System.out.print(" Odd classes spilover: " + extraTotal);*/
 
